@@ -5,12 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="회사 소개 웹사이트">
   <title>우리 회사</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- 헤더 -->
+  <!-- Header - Glassmorphism Navbar -->
   <header class="header">
-    <div class="container header-inner">
+    <div class="header-inner">
       <a href="/" class="logo">우리회사</a>
       <nav>
         <ul class="nav-list">
@@ -18,14 +21,35 @@
           <li><a href="#contact" class="nav-link">연락처</a></li>
         </ul>
       </nav>
+      <a href="#contact" class="nav-cta">시작하기</a>
     </div>
   </header>
 
   <main>
-    <!-- 서비스 소개 -->
-    <section id="services" class="section">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-bg">
+        <div style="position:absolute;inset:0;background:radial-gradient(ellipse at 50% 30%, rgba(65,228,192,0.08) 0%, transparent 60%);"></div>
+      </div>
+      <div class="hero-content">
+        <span class="label-badge">혁신의 시작</span>
+        <h1 class="hero-title">
+          비즈니스의<br><span style="color:var(--secondary);">새로운 흐름.</span>
+        </h1>
+        <p class="hero-desc">
+          우리는 단순한 솔루션을 넘어, 비즈니스와 기술이 자연스럽게 연결되는 환경을 설계합니다.
+        </p>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section services-section">
       <div class="container">
-        <h2 class="section-title">우리의 서비스</h2>
+        <div style="text-align:center;margin-bottom:3.5rem;">
+          <span class="label-badge">핵심 역량</span>
+          <h2 class="section-title" style="margin-bottom:1rem;">우리의 <span class="section-title-accent">서비스</span></h2>
+          <p class="section-subtitle" style="margin:0 auto;">고객의 비즈니스 성장을 위한 맞춤형 솔루션을 제공합니다.</p>
+        </div>
         <div class="services-grid">
           <article class="service-card">
             <div class="service-icon">&#x1F4BB;</div>
@@ -46,10 +70,13 @@
       </div>
     </section>
 
-    <!-- 연락처 -->
-    <section id="contact" class="section" style="background-color: var(--color-card);">
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
       <div class="container">
-        <h2 class="section-title">연락처</h2>
+        <div style="text-align:center;margin-bottom:3.5rem;">
+          <span class="label-badge">소통</span>
+          <h2 class="section-title" style="margin-bottom:1rem;"><span class="section-title-accent">연락처</span></h2>
+        </div>
         <div class="contact-list">
           <div class="contact-item">
             <span class="contact-icon">&#x1F4CD;</span>
@@ -75,12 +102,28 @@
         </div>
       </div>
     </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="cta-box">
+        <h2 class="cta-title">프로젝트를 시작해 볼까요?</h2>
+        <div class="cta-buttons">
+          <a href="#contact" class="btn-primary">문의하기</a>
+          <a href="#services" class="btn-ghost">서비스 보기</a>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <!-- 푸터 -->
+  <!-- Footer -->
   <footer class="footer">
     <div class="container footer-inner">
-      <p class="footer-text">&copy; 2026 우리회사. All rights reserved.</p>
+      <div class="footer-logo">우리회사</div>
+      <div class="footer-links">
+        <a href="#" class="footer-link">개인정보 처리방침</a>
+        <a href="#" class="footer-link">이용약관</a>
+      </div>
+      <div class="footer-copy">&copy; 2026 우리회사. All rights reserved.</div>
     </div>
   </footer>
 </body>
