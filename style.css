@@ -173,3 +173,18 @@ img {
   font-size: 1rem;
   color: var(--color-text);
 }
+
+/* 푸터 */
+.footer {
+  background-color: var(--color-text);
+  padding: 24px 0;
+}
+
+.footer-inner {
+  text-align: center;
+}
+
+.footer-text {
+  font-size: 0.85rem;
+  color: #FFFFFF;
+}
