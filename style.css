@@ -61,3 +61,40 @@ img {
   margin-bottom: 48px;
   color: var(--color-text);
 }
+
+/* 헤더 */
+.header {
+  position: sticky;
+  top: 0;
+  background-color: var(--color-card);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+  z-index: 100;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+}
+
+.logo {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.nav-list {
+  display: flex;
+  gap: 24px;
+}
+
+.nav-link {
+  font-size: 0.95rem;
+  color: var(--color-text-sub);
+  transition: color 0.2s;
+}
+
+.nav-link:hover {
+  color: var(--color-primary);
+}
